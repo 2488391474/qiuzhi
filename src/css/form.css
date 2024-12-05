@@ -1,0 +1,7 @@
+.focus-ring {
+  @apply focus:border-blue-500 focus:ring-blue-500;
+}
+
+.lable{
+    @apply block text-[13px] from-neutral-600 mb-1;
+}
