@@ -27,10 +27,6 @@ export default function Form() {
 
   // 表单校验
   const validateForm = () => {
-    console.log("a");
-
-    setIsshowBtn(false);
-
     //验证手机号正则
     const phoneReg = /^\d{11}$/;
     const codeReg = /^\d{6}$/;
@@ -51,6 +47,8 @@ export default function Form() {
     setErrors(obj);
     if (!flag) return;
 
+    //发送请求部分
+    setIsshowBtn(false);
     let message;
     (async function () {
       try {
